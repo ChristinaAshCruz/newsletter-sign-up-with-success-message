@@ -1,2 +1,2 @@
-# newsletter-sign-up-with-success-message
+# Newsletter Sign Up (with success message)
  frontend mentor challenge
