@@ -35,24 +35,44 @@
       class="griditems-center mx-auto flex w-200 grid-cols-2 justify-between gap-7 rounded-3xl bg-white p-5"
     >
       <!-- left div -->
-      <div
-        class="mx-auto flex flex-1 flex-col items-center justify-between p-8"
-      >
-        <!-- <h1 class="border-dashed text-5xl font-bold tracking-wide">
+      <div class="mx-auto flex flex-1 flex-col justify-around p-8 py-12">
+        <h1 class="border-dashed text-6xl font-bold tracking-wide">
           Stay updated!
         </h1>
-        <p>
-          Join 60,000+ product managers receiving monthly updates on: Product
-          discovery and building what matters Measuring to ensure updates are a
-          success And much more! Email address email@company.com Subscribe to
-          monthly newsletter
-        </p> -->
-        <div class="bg-tomato">hello there</div>
-        <div class="bg-tomato">
-          Join 60,000+ product managers receiving monthly updates on: Product
-          discovery and building what matters Measuring to ensure updates are a
-          success And much more! Email address email@company.com Subscribe to
-          monthly newsletter
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="grid gap-4">
+          <div class="flex gap-2">
+            <img src="/src/assets/images/icon-list.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="flex gap-2">
+            <img src="/src/assets/images/icon-list.svg" alt="" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="flex gap-2">
+            <img src="/src/assets/images/icon-list.svg" alt="" />
+            <p>And much more!</p>
+          </div>
+        </div>
+        <div>
+          <form action="#" class="grid gap-6">
+            <div>
+              <label for="email" class="text-xs font-bold">Email Address</label>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                class="placeholder:text-gray-400 focus:ring-indigo-600 mt-1 block w-full rounded-lg border-0 p-4 pr-20 text-grey ring-1 ring-inset ring-grey/40 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                placeholder="email@company.com"
+              />
+            </div>
+            <button
+              type="submit"
+              class="rounded-lg bg-dark-slate-gray p-4 font-bold text-white"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
         </div>
       </div>
       <div class="flex-1">
