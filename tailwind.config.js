@@ -12,9 +12,6 @@ module.exports = {
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
     },
-    fontSize: {
-      "6xl": "3.35rem",
-    },
     extend: {
       width: {
         200: "58rem",
