@@ -15,7 +15,7 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
+    <script src="src/script.js" defer></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -32,7 +32,7 @@
   <body class="bg-white p-0 lg:bg-dark-slate-gray lg:p-20">
     <!-- Sign-up form start -->
     <main
-      class="flex h-screen flex-col items-center gap-2 md:p-5 lg:mx-auto lg:h-auto lg:w-200 lg:flex-row-reverse lg:rounded-3xl lg:bg-white"
+      class="flex h-screen flex-col items-center gap-2 lg:mx-auto lg:h-auto lg:w-200 lg:flex-row-reverse lg:rounded-3xl lg:bg-white lg:p-5"
     >
       <!-- mobile image -->
       <img
@@ -48,7 +48,7 @@
         class="hidden lg:block"
       />
       <!-- left div -->
-      <div class="grid justify-between gap-8 p-9">
+      <div class="grid justify-between gap-6 p-7 md:gap-8 md:p-9">
         <div>
           <h1 class="mb-3 border-dashed text-6xl font-bold tracking-wide">
             Stay updated!
@@ -70,19 +70,42 @@
           </div>
         </div>
         <div>
-          <form action="#" class="grid gap-6">
-            <div>
-              <label for="email" class="text-[0.75rem] font-bold"
-                >Email Address</label
-              >
+          <form class="grid gap-6" novalidate>
+            <!-- <label for="email" class="mb-5 flex flex-col-reverse">
               <input
                 type="email"
-                name="price"
-                id="price"
-                class="placeholder:text-gray-400 focus:ring-indigo-600 sm:text-sm mt-1 block w-full cursor-pointer rounded-lg border-0 p-4 pr-20 text-grey ring-1 ring-inset ring-grey/40 focus:ring-1 focus:ring-inset sm:leading-6"
-                placeholder="email@company.com"
+                name="email"
+                id="email"
+                class="border-gray-300 bg-inherit shadow-gray-100 text-neutral-800 peer/input mt-2 w-full appearance-none rounded border p-3 shadow outline-none invalid:[&:not(:placeholder-shown):not(:focus)]:border-tomato"
+                placeholder=" "
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               />
-            </div>
+              <p>Email</p>
+              <p class="text-sm hidden text-tomato peer-[&:not(:placeholder-shown):not(:focus)]/input:block">
+                Please enter a valid email address
+              </p>
+            </label> -->
+            <label class="block flex flex-col-reverse">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="sm:text-sm peer block w-full rounded-lg border border-dark-slate-gray bg-white p-3 placeholder-grey invalid:bg-tomato/5 invalid:text-tomato invalid:ring-tomato focus:outline-none focus:ring-1 focus:invalid:border-tomato disabled:text-grey"
+                placeholder="you@example.com"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                required
+              />
+              <div class="mb-2 flex justify-between font-bold">
+                <p class="block text-[10pt] text-dark-slate-gray">
+                  Email address
+                </p>
+                <!-- error message -->
+                <p class="hidden text-[10pt] text-tomato" id="error-message">
+                  Valid email required
+                </p>
+              </div>
+            </label>
             <button
               type="submit"
               class="hover: hover:from-pink hover:to-orange hover:shadow-pink/20 rounded-lg bg-dark-slate-gray p-4 font-bold text-white hover:bg-gradient-to-r hover:shadow-xl"
