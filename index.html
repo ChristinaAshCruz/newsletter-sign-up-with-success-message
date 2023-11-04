@@ -32,8 +32,9 @@
   <body class="bg-white p-0 lg:bg-dark-slate-gray lg:p-20">
     <!-- Sign-up form start -->
     <main
-      class="flex h-screen flex-col items-center gap-2 md:p-4 lg:mx-auto lg:h-auto lg:w-200 lg:flex-row-reverse lg:rounded-xl lg:bg-white"
+      class="flex h-screen flex-col items-center gap-2 md:p-5 lg:mx-auto lg:h-auto lg:w-200 lg:flex-row-reverse lg:rounded-3xl lg:bg-white"
     >
+      <!-- mobile image -->
       <img
         src="src/assets/images/illustration-sign-up-mobile.svg"
         alt=""
@@ -47,12 +48,14 @@
         class="hidden lg:block"
       />
       <!-- left div -->
-      <div class="grid justify-between gap-6 p-7">
-        <h1 class="text-5xl border-dashed font-bold tracking-wide">
-          Stay updated!
-        </h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <div class="flex flex-col gap-4">
+      <div class="grid justify-between gap-8 p-9">
+        <div>
+          <h1 class="mb-3 border-dashed text-6xl font-bold tracking-wide">
+            Stay updated!
+          </h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div class="flex flex-col gap-3">
           <div class="flex items-start gap-4">
             <img src="/src/assets/images/icon-list.svg" alt="" />
             <p>Product discovery and building what matters</p>
@@ -69,42 +72,42 @@
         <div>
           <form action="#" class="grid gap-6">
             <div>
-              <label for="email" class="text-xs font-bold">Email Address</label>
+              <label for="email" class="text-[0.75rem] font-bold"
+                >Email Address</label
+              >
               <input
-                type="text"
+                type="email"
                 name="price"
                 id="price"
-                class="placeholder:text-gray-400 focus:ring-indigo-600 sm:text-sm mt-1 block w-full rounded-lg border-0 p-4 pr-20 text-grey ring-1 ring-inset ring-grey/40 focus:ring-2 focus:ring-inset sm:leading-6"
+                class="placeholder:text-gray-400 focus:ring-indigo-600 sm:text-sm mt-1 block w-full cursor-pointer rounded-lg border-0 p-4 pr-20 text-grey ring-1 ring-inset ring-grey/40 focus:ring-1 focus:ring-inset sm:leading-6"
                 placeholder="email@company.com"
               />
             </div>
             <button
               type="submit"
-              class="rounded-lg bg-dark-slate-gray p-4 font-bold text-white"
+              class="hover: hover:from-pink hover:to-orange hover:shadow-pink/20 rounded-lg bg-dark-slate-gray p-4 font-bold text-white hover:bg-gradient-to-r hover:shadow-xl"
             >
               Subscribe to monthly newsletter
             </button>
           </form>
         </div>
+        <!-- Sign-up form end -->
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+      <!-- Success message start -->
+      <div class="hidden">
+        Thanks for subscribing! A confirmation email has been sent to
+        ash@loremcompany.com. Please open it and click the button inside to
+        confirm your subscription. Dismiss message
       </div>
       <!-- right div (image) -->
     </main>
 
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
     <!-- Success message end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>

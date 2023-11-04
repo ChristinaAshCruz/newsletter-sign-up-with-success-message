@@ -8,13 +8,18 @@ module.exports = {
       "charcoal-gray": "hsl(235, 18%, 26%)",
       grey: "hsl(231, 7%, 60%)",
       white: "hsl(0,0%,100%)",
+      pink: "#FC5478",
+      orange: "#fc6a3c",
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],
     },
+    fontSize: {
+      "6xl": "3rem",
+    },
     extend: {
       width: {
-        200: "58rem",
+        200: "55rem",
       },
     },
   },
