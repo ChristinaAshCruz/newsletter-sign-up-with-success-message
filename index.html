@@ -86,18 +86,20 @@
                 Please enter a valid email address
               </p>
             </label> -->
-            <label class="block flex flex-col-reverse">
+            <label class="flex flex-col-reverse">
               <input
                 type="email"
                 name="email"
                 id="email"
-                class="sm:text-sm peer block w-full rounded-lg border border-dark-slate-gray bg-white p-3 placeholder-grey invalid:bg-tomato/5 invalid:text-tomato invalid:ring-tomato focus:outline-none focus:ring-1 focus:invalid:border-tomato disabled:text-grey"
+                class="sm:text-sm peer block w-full rounded-lg border border-dark-slate-gray bg-opacity-5 p-3 placeholder-grey focus:outline-none focus:ring-1 disabled:text-grey"
                 placeholder="you@example.com"
                 pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                 required
               />
               <div class="mb-2 flex justify-between font-bold">
-                <p class="block text-[10pt] text-dark-slate-gray">
+                <p
+                  class="text-[10pt] text-dark-slate-gray peer-invalid:focus:block"
+                >
                   Email address
                 </p>
                 <!-- error message -->
@@ -108,7 +110,7 @@
             </label>
             <button
               type="submit"
-              class="hover: hover:from-pink hover:to-orange hover:shadow-pink/20 rounded-lg bg-dark-slate-gray p-4 font-bold text-white hover:bg-gradient-to-r hover:shadow-xl"
+              class="hover: rounded-lg bg-dark-slate-gray p-4 font-bold text-white hover:bg-gradient-to-r hover:from-pink hover:to-orange hover:shadow-xl hover:shadow-pink/20"
             >
               Subscribe to monthly newsletter
             </button>
