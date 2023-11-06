@@ -16,6 +16,7 @@ module.exports = {
     },
     fontSize: {
       "6xl": "3rem",
+      "7xl": "3.75rem",
     },
     extend: {
       width: {

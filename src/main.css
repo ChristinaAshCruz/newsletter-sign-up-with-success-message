@@ -542,12 +542,8 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -578,16 +574,6 @@ video {
   width: 100vw;
 }
 
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -608,6 +594,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -622,10 +612,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-lg {
@@ -645,11 +631,6 @@ video {
   border-color: hsl(234 29% 20% / var(--tw-border-opacity));
 }
 
-.border-tomato {
-  --tw-border-opacity: 1;
-  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
-}
-
 .bg-dark-slate-gray {
   --tw-bg-opacity: 1;
   background-color: hsl(234 29% 20% / var(--tw-bg-opacity));
@@ -658,11 +639,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-}
-
-.bg-tomato {
-  --tw-bg-opacity: 1;
-  background-color: hsl(4 100% 67% / var(--tw-bg-opacity));
 }
 
 .bg-opacity-5 {
@@ -685,8 +661,17 @@ video {
   padding: 1.75rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .text-6xl {
   font-size: 3rem;
+}
+
+.text-7xl {
+  font-size: 3.75rem;
 }
 
 .text-\[10pt\] {
@@ -695,6 +680,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-\[3\.75rem\] {
+  line-height: 3.75rem;
 }
 
 .tracking-wide {
@@ -726,15 +715,9 @@ video {
   color: hsl(231 7% 60% / var(--tw-placeholder-opacity));
 }
 
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+.hover\:bg-charcoal-gray:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(235 18% 26% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover {
@@ -773,43 +756,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:invalid\:border-tomato:invalid:focus {
-  --tw-border-opacity: 1;
-  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
-}
-
-.focus\:invalid\:bg-tomato\/5:invalid:focus {
-  background-color: hsl(4 100% 67% / 0.05);
-}
-
-.focus\:invalid\:text-tomato:invalid:focus {
-  --tw-text-opacity: 1;
-  color: hsl(4 100% 67% / var(--tw-text-opacity));
-}
-
-.focus\:invalid\:ring-tomato:invalid:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: hsl(4 100% 67% / var(--tw-ring-opacity));
-}
-
 .disabled\:text-grey:disabled {
   --tw-text-opacity: 1;
   color: hsl(231 7% 60% / var(--tw-text-opacity));
 }
 
-.peer:invalid ~ .peer-invalid\:hidden {
-  display: none;
-}
-
 .peer:invalid ~ .peer-invalid\:focus\:block:focus {
-  display: block;
-}
-
-.peer\/input:not(:-moz-placeholder-shown):not(:focus) ~ .peer-\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\]\/input\:block {
-  display: block;
-}
-
-.peer\/input:not(:placeholder-shown):not(:focus) ~ .peer-\[\&\:not\(\:placeholder-shown\)\:not\(\:focus\)\]\/input\:block {
   display: block;
 }
 
@@ -845,8 +797,16 @@ video {
     width: 55rem;
   }
 
+  .lg\:w-\[32rem\] {
+    width: 32rem;
+  }
+
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:rounded-3xl {
@@ -863,6 +823,14 @@ video {
     background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
   }
 
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
+  .lg\:p-14 {
+    padding: 3.5rem;
+  }
+
   .lg\:p-20 {
     padding: 5rem;
   }
@@ -870,14 +838,4 @@ video {
   .lg\:p-5 {
     padding: 1.25rem;
   }
-}
-
-.invalid\:\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\]\:border-tomato:not(:-moz-placeholder-shown):not(:focus):invalid {
-  --tw-border-opacity: 1;
-  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
-}
-
-.invalid\:\[\&\:not\(\:placeholder-shown\)\:not\(\:focus\)\]\:border-tomato:not(:placeholder-shown):not(:focus):invalid {
-  --tw-border-opacity: 1;
-  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
 }
